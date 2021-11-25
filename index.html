@@ -1,25 +1,21 @@
-<!DOCTYPE html>
-    <html>
-    <head>
-    <meta charset=utf-8 />
-    <title>Your title</title>
-      
-    
-      <link href="https://unpkg.com/video.js/dist/video-js.css" rel="stylesheet">
-      <script src="https://unpkg.com/video.js/dist/video.js"></script>
-      <script src="https://unpkg.com/videojs-contrib-hls/dist/videojs-contrib-hls.js"></script>
-       
-    </head>
-    <body>
-      <video id="my_video_1" class="video-js vjs-fluid vjs-default-skin" controls preload="auto"
-      data-setup='{}'>
-        <source src="http://evpp.mm.uol.com.br:1935/ne10/ne10.smil/chunklist_w199492672_b216000_sleng.m3u8" type="application/x-mpegURL">
-      </video>
-      
-    <script>
-    var player = videojs('my_video_1');
-    player.play();
-    </script>
-      
-    </body>
-    </html>
+<head>
+  <link href="https://vjs.zencdn.net/7.6.6/video-js.css" rel="stylesheet" />
+  <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+</head>
+
+<body>
+  <video
+    id="my-video"
+    class="video-js vjs-big-play-centered vjs-fluid"
+    controls
+    preload="auto"
+    width="100%"
+    height="460"
+    poster="MY_VIDEO_POSTER.jpg"
+    data-setup="{}"
+  >
+    <source src="https://5b33b873179a2.streamlock.net:1443/live/livestream/chunklist_w1719249518.m3u8" type="application/x-mpegURL">
+  </video>
+
+  <script src="https://vjs.zencdn.net/7.6.6/video.js"></script>
+</body>

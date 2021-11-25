@@ -1,15 +1,25 @@
-<!-- CSS  -->
- <link href="https://vjs.zencdn.net/7.2.3/video-js.css" rel="stylesheet">
-<!-- HTML -->
-<video id='hls-example'  class="video-js vjs-default-skin" width="500" height="300" controls>
-<source type="application/x-mpegURL" src="http://evpp.mm.uol.com.br:1935/ne10/ne10.smil/chunklist_w199492672_b216000_sleng.m3u8">
-</video>
-<!-- JS code -->
-<!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
-<script src="https://vjs.zencdn.net/ie8/ie8-version/videojs-ie8.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-contrib-hls/5.14.1/videojs-contrib-hls.js"></script>
-<script src="https://vjs.zencdn.net/7.2.3/video.js"></script>
-<script>
-var player = videojs('hls-example');
-player.play();
-</script>
+<!DOCTYPE html>
+    <html>
+    <head>
+    <meta charset=utf-8 />
+    <title>Your title</title>
+      
+    
+      <link href="https://unpkg.com/video.js/dist/video-js.css" rel="stylesheet">
+      <script src="https://unpkg.com/video.js/dist/video.js"></script>
+      <script src="https://unpkg.com/videojs-contrib-hls/dist/videojs-contrib-hls.js"></script>
+       
+    </head>
+    <body>
+      <video id="my_video_1" class="video-js vjs-fluid vjs-default-skin" controls preload="auto"
+      data-setup='{}'>
+        <source src="http://evpp.mm.uol.com.br:1935/ne10/ne10.smil/chunklist_w199492672_b216000_sleng.m3u8" type="application/x-mpegURL">
+      </video>
+      
+    <script>
+    var player = videojs('my_video_1');
+    player.play();
+    </script>
+      
+    </body>
+    </html>
